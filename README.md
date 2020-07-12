@@ -1,7 +1,7 @@
 # Trabalho-ICC-QWIRKLE
-Repositorio para entrega do trbalho, "implemente o jogo Qwirkle"
+Repositorio para entrega do trabalho, "implemente o jogo Qwirkle"
 
-Intrgrantes do grupo:
+Integrantes do grupo:
 -Aluno1:Henrique Carobolante Parro - nº USP: 11917987 
 -Aluno2:Leonardo Hannas de Carvalho Santos  - nº USP: 11800480
 -Aluno3:Lucas Carvalho Freiberger Stapf - nº USP: 11800559
