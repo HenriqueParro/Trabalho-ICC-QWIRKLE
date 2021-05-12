@@ -1,4 +1,6 @@
-# Trabalho-ICC-QWIRKLE
+# Jogo QWIRKLE
+**Trabalho de Introdução a Ciência da Computação (ICC)**
+
 Repositório para entrega do trabalho: "Implemente o jogo Qwirkle"
 
 Intregrantes do grupo:
