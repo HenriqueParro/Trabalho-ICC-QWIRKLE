@@ -1,4 +1,5 @@
-# Jogo QWIRKLE
+![LogoQwirkle-removebg-preview](https://user-images.githubusercontent.com/62681897/118050822-63ed7d80-b356-11eb-9d2d-06220a3bf929.png)
+
 **Trabalho de Introdução a Ciência da Computação (ICC)**
 
 Repositório para entrega do trabalho: "Implemente o jogo Qwirkle"
