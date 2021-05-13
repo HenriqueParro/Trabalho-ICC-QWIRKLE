@@ -4,14 +4,6 @@
 **Trabalho de Introdução a Ciência da Computação (ICC)**
 
 # Trabalho-ICC-QWIRKLE
-Repositorio para entrega do trabalho, "implemente o jogo Qwirkle"
-
-Integrantes do grupo:
--Aluno1:Henrique Carobolante Parro - nº USP: 11917987 
--Aluno2:Leonardo Hannas de Carvalho Santos  - nº USP: 11800480
--Aluno3:Lucas Carvalho Freiberger Stapf - nº USP: 11800559
--Aluno4:Emerson Pereira Portela Filho - nº USP: 11800625
-
 
 Repositório para entrega do trabalho: "Implemente o jogo Qwirkle"
 
