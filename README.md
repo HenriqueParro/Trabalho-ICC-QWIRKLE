@@ -3,8 +3,6 @@
 
 **Trabalho de Introdução a Ciência da Computação (ICC)**
 
-# Trabalho-ICC-QWIRKLE
-
 Repositório para entrega do trabalho: "Implemente o jogo Qwirkle"
 
 Intregrantes do grupo:
