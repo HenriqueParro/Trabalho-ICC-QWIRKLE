@@ -37,7 +37,7 @@ void printErro(){
       break;
 
     case ERRO_COORD_OCUP:
-      printf("%s ATTENTION: %s This position is filled occupied.\n", BG_RED, BG_END);
+      printf("%s ATTENTION: %s This position is occupied.\n", BG_RED, BG_END);
       break;
 
     case ERRO_LADR_IGUAL:
