@@ -29,51 +29,51 @@ void printErro(){
       break;
 
     case ERRO_MEMORIA: 
-      printf("%s ERRO DETECTADO: %s Erro de memória.\n", BG_RED, BG_END);
+      printf("%s ERROR DETECTED: %s Memory error.\n", BG_RED, BG_END);
       break;
 
     case ERRO_COORD_INVALIDA: 
-      printf("%s ATENCAO: %s Essa posicao nao existe.\n", BG_RED, BG_END);
+      printf("%s ATTENTION: %s This position doesn't exist.\n", BG_RED, BG_END);
       break;
 
     case ERRO_COORD_OCUP:
-      printf("%s ATENCAO: %s Essa posicao esta ocupada.\n", BG_RED, BG_END);
+      printf("%s ATTENTION: %s This position is filled occupied.\n", BG_RED, BG_END);
       break;
 
     case ERRO_LADR_IGUAL:
-      printf("%s ATENCAO: %s Esse ladrilho ja foi utilizado nessa fila!\n", BG_RED, BG_END);
+      printf("%s ATTENTION: %s This tile has already been used in that queue!\n", BG_RED, BG_END);
       break;
     
     case ERRO_FILA_INV:
-      printf("%s ATENCAO: %s Fila invalida!\n", BG_RED, BG_END);
+      printf("%s ATTENTION: %s Invalid queue!\n", BG_RED, BG_END);
       break;
 
     case ERRO_CMD_INV:
-      printf("%s ATENCAO: %s Comando invalido!\n", BG_RED, BG_END);
+      printf("%s ATTENTION: %s Invalid command!\n", BG_RED, BG_END);
       break;
 
     case ERRO_LADR_INDIS:
-      printf("%s ATENCAO: %s Ladrilho indisponivel!\n", BG_RED, BG_END);
+      printf("%s ATTENTION: %s Tile not available!\n", BG_RED, BG_END);
       break;
     
     case ERRO_JOGADA_INVALIDA:
-      printf("%s ATENCAO: %s Jogada invalida!\n", BG_RED, BG_END);
+      printf("%s ATTENTION: %s Invalid play!\n", BG_RED, BG_END);
       break;
      
     case ERRO_LADR_ESGOTADOS:   
-      printf("%s ATENCAO: %s Nao ha mais ladrilhos disponiveis para troca!\n", BG_RED, BG_END);
+      printf("%s ATTENTION: %s There are no more tiles avaliable for exchange!\n", BG_RED, BG_END);
       break;
       
     case ERRO_LADR_INVALIDO:
-      printf("%s ATENCAO: %s Ladrilho invalido!\n", BG_RED, BG_END);
+      printf("%s ATTENTION: %s Invalid tile!\n", BG_RED, BG_END);
       break;
 
     case ERRO_NUM_JOG_INV:
-      printf("%s ATENCAO: %s Numero de jogadores invalido! (Min: 1 | Max: 18)\n", BG_RED, BG_END);
+      printf("%s ATTENTION: %s Invalid number of players! (Min: 1 | Max: 18)\n", BG_RED, BG_END);
       break;
       
     default:
-      printf("%s ERRO DETECTADO: %s Ocorreu um erro inesperado!\n", BG_RED, BG_END);
+      printf("%s ERROR DETECTED: %s An unexpected error has occurred!\n", BG_RED, BG_END);
       break;
   }
 }
@@ -216,12 +216,12 @@ void printJogo(Gerenciador g){
     printf("\n");
     if(g.primRodada == FALSE){
       
-      if(g.cheat == 's' || g.cheat == 'S') printf("Modo CHEAT: %s ON %s   |   ", BG_GREEN, BG_END);
+      if(g.cheat == 's' || g.cheat == 'S') printf("CHEAT MODE: %s ON %s   |   ", BG_GREEN, BG_END);
       
       if(g.jogDaVez == 0){
-        printf("Rodada anterior: Jogador [%s] (Pontuacao Total: %d)\n", g.listJog[g.qntJog - 1].nome, g.listJog[g.qntJog - 1].pontTotal);
+        printf("Previous round: Player [%s] (Score: %d)\n", g.listJog[g.qntJog - 1].nome, g.listJog[g.qntJog - 1].pontTotal);
       } else {
-        printf("Rodada anterior: Jogador [%s] (Pontuacao Total: %d)\n", g.listJog[g.jogDaVez - 1].nome, g.listJog[g.jogDaVez - 1].pontTotal);
+        printf("Previous round: Player [%s] (Score: %d)\n", g.listJog[g.jogDaVez - 1].nome, g.listJog[g.jogDaVez - 1].pontTotal);
       }
 
     } else {
@@ -233,14 +233,14 @@ void printJogo(Gerenciador g){
     printTabuleiro(g.tab);
     printf("\n");
 
-    printf("Comandos disponiveis: %s Jogar %s <peca> <linha> <coluna> | %s Trocar %s <peca_1> ... <peca_n> | %s Passar %s | %s Sair %s | %s Help %s |\n\n", BG_BLUE, BG_END, BG_BLUE, BG_END, BG_BLUE, BG_END, BG_BLUE, BG_END, BG_BLUE, BG_END);
+    printf("Available commands: %s Play %s <tile> <row> <column> | %s Exchange %s <tile_1> ... <tile_n> | %s Pass %s | %s Quit %s | %s Help %s |\n\n", BG_BLUE, BG_END, BG_BLUE, BG_END, BG_BLUE, BG_END, BG_BLUE, BG_END, BG_BLUE, BG_END);
     
-    printf("Pecas disponiveis: ");
+    printf("Available tiles: ");
     printPecasJogador(g.listJog[g.jogDaVez]);
     printf("\n\n");
     
     printErro();
-    printf("Jogador [%s] (Pontuacao Total: %d): ", g.listJog[g.jogDaVez].nome, g.listJog[g.jogDaVez].pontTotal);
+    printf("Player [%s] (Score: %d): ", g.listJog[g.jogDaVez].nome, g.listJog[g.jogDaVez].pontTotal);
 }
 
 void printPreJogo(Gerenciador g){
@@ -249,7 +249,7 @@ void printPreJogo(Gerenciador g){
   printLogo();
 
   printf("\n");
-  printf("Comandos disponiveis: %s Novo %s | %s Fechar %s | %s Help %s \n", BG_BLUE, BG_END, BG_BLUE,BG_END,BG_BLUE ,BG_END);
+  printf("Available commands: %s New %s | %s Close %s | %s Help %s \n", BG_BLUE, BG_END, BG_BLUE,BG_END,BG_BLUE ,BG_END);
   printErro();
-  printf("Digite um comando: ");
+  printf("Enter a command: ");
 }
